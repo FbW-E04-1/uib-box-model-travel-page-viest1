@@ -1,0 +1,63 @@
+* {
+    color:black;
+    
+}
+body{
+    font-family:Arial;
+    
+}
+.container{
+    border:15px solid lightgrey;
+    width:700px;
+    height:400px;
+    display:grid;
+    grid-template-columns: 1fr 1.07fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+    "nav right"
+    "text right";
+    grid-gap:1rem;
+}
+
+.nav{
+    grid-area:nav;
+    
+}
+.right{
+    grid-area:right;
+    background-image:url(/images/beach.jpg);
+    background-size:cover;
+    background-position: center;
+    
+}
+.text{
+    grid-area:text;
+    padding-left:1rem;
+    align-items:center;
+    font-size:0.7rem;
+    
+}
+.small-text{
+    background:lightgrey;
+    padding:1rem;
+    font-size:0.5rem;
+    text-align:right;
+}
+.nav{
+    text-align:right;
+    padding:1rem;
+    text-transform: uppercase;
+    font-size:0.7rem;
+}
+a{
+    text-decoration: none;
+    padding-left:0.5rem;
+}
+a:hover{
+    font-weight:800;
+}
+.mockup{
+    padding-top:2rem;
+    width:730px;
+}
+
